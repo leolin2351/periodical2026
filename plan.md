@@ -26,19 +26,20 @@
 * [ ] Quiz 
     * [ ] UI
 
-* [ ] Elements of the Periodic Table:
-    * [ ] Hydrogen (1) - Ryan
+* [ ] Elements of the Periodic Table: - Darren
+    * [X] Hydrogen (1) - Ryan
     * [ ] Helium (2) - Gabriel
-    * [ ] Lithium (3) - Darren
+    * [X] Lithium (3) - Darren
     * [ ] Nitrogen (7) - Yiwen
     * [ ] Oxygen (8) - Leo
     * [ ] Phosphorus (15) - Shi Jun
     * [ ] Sulfur (16) - Rain
+    * [ ] Argon (18) - William
     * [ ] Potassium (19) - Nancy
     * [ ] Calcium (20) - Jolee
-    * [ ] Argon (18) - William
     * [ ] Bromine (35) - Tina
     * [ ] Silver (47) - Edward
+    * [ ] Cesium (55) - Abdel
     * [ ] Gold (79) - Alexander
     * [ ] Cesium (55) - Abdel
     * [ ] Lawrencium (103) - Lixin
