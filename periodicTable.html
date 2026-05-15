@@ -77,112 +77,112 @@
                 name: "Hydrogen",
                 atomicNumber: 1,
                 symbol: "H",
-                description: "H is ..",
+                description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                 type: "nonmetal"
                 },
                 {
                     name: "Helium",
                     atomicNumber: 2,
                     symbol: "He",
-                    description: "He is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "nonmetal"
                 },
                 {
                     name: "Lithium",
                     atomicNumber: 3,
                     symbol: "Li",
-                    description: "Li is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "metal"
                 },
                 {
                     name: "Nitrogen",
                     atomicNumber: 7,
                     symbol: "N",
-                    description: "N is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "nonmetal"
                 },
                 {
                     name: "Oxygen",
                     atomicNumber: 8,
                     symbol: "O",
-                    description: "O is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "nonmetal"
                 },
                 {
                     name: "Aluminum",
                     atomicNumber: 13,
                     symbol: "Al",
-                    description: "Al is ....",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "metalloids"
                 },
                 {
                     name: "Phosphorus",
                     atomicNumber: 15,
                     symbol: "P",
-                    description: "P is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "nonmetal"
                 },
                 {
                     name: "Sulfur",
                     atomicNumber: 16,
                     symbol: "S",
-                    description: "S is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "nonmetal"
                 },
                 {
                     name: "Argon",
                     atomicNumber: 18,
                     symbol: "Ar",
-                    description: "Ar is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "nonmetal"
                 },
                 {
                     name: "Potassium",
                     atomicNumber: 19,
                     symbol: "K",
-                    description: "K is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "metal"
                 },
                 {
                     name: "Calcium",
                     atomicNumber: 20,
                     symbol: "Ca",
-                    description: "Ca is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "metal"
                 },
                 {
                     name: "Bromine",
                     atomicNumber: 35,
                     symbol: "Br",
-                    description: "Br is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "nonmetal"
                 },
                 {
                     name: "Silver",
                     atomicNumber: 47,
                     symbol: "Ag",
-                    description: "Ag is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "metal"
                 }, 
                 {
                     name: "Cesium",
                     atomicNumber: 55,
                     symbol: "Cs",
-                    description: "Cs is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "metal"
                 },
                 {
                     name: "Gold",
                     atomicNumber: 79,
                     symbol: "Au",
-                    description: "Au is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "metal"
                 },
                 {
                     name: "Lawrencium",
                     atomicNumber: 103,
                     symbol: "Lr",
-                    description: "Lr is ...",
+                    description: `Discovery: ... was discovered in ... by ... <br> Roots of it's name: ... <br> Interesting fact/trivia: ...`,
                     type: "metal"
                 },
             ]
@@ -200,8 +200,11 @@
                 newSpan.setAttribute("data-atomic-name", el.name);
                 const metalloids = document.querySelector("#metalloids");
                 const nonmetals = document.querySelector("#nonmetals");
+                const metals = document.querySelector("#metals");
                 if (el.type === "metalloids") {
                     metalloids.appendChild(newSpan);
+                } else if (el.type === "metal") {
+                    metals.appendChild(newSpan);
                 } else {
                 nonmetals.appendChild(newSpan);
                 }
