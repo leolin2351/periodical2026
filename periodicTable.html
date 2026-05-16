@@ -1,313 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <style>
-            /* CSS */
-            body {
-                height: 100vh !important;
-            }
-            span {
-                padding: 20px 20px;
-                margin-top: 10px;
-                border: 2px solid black;
-                width: 20px;
-                height: 30px;
-                cursor: pointer;
-            }
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* CSS */
+      body {
+        height: 100vh !important;
+      }
+      span {
+        padding: 20px 20px;
+        margin-top: 10px;
+        border: 2px solid black;
+        width: 20px;
+        height: 30px;
+        cursor: pointer;
+      }
 
-            .idk {
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-                padding: 0px 50px;
-            }
-            .top{
-                margin-top: 1vw
-            }
-            .sec {
-                display: flex;
-                flex-direction: column;
-            }
+      .idk {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 50px;
+      }
+      .top {
+        margin-top: 1vw;
+      }
+      .sec {
+        display: flex;
+        flex-direction: column;
+      }
 
-            .elements {
-                display: flex;
-                gap: 2px;
-            }
-            .information{
-                width: 50vw;
-            }
-            h2{
-                margin-left:10vw
-            }
-            p{
-                margin-left:2vw;
-                margin-right:2vw;
-                font-size:2vw;
-            }
-        </style>
+      .elements {
+        display: flex;
+        gap: 2px;
+      }
+      .information {
+        width: 50vw;
+      }
+      h2 {
+        margin-left: 10vw;
+      }
+      p {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-size: 2vw;
+      }
+    </style>
 
-        <title>Title</title>
-    </head>
-    <body>
-        <!-- HTML -->
-         <div class = "idk">
-                <div class="sec metals">
-                    <h1>Metals</h1>
-                    <div class="elements temp" id="metals">
-                    </div>
-                </div>
-                <div class="sec metalloids">
-                    <h1>Metalloids</h1>
-                    <div class="elements temp" id="metalloids">
-                    </div>
-                </div>
-                <div classs="sec">
-                    <h1>Nonmetals</h1>
-                    <div class="elements temp" id="nonmetals">
-                    </div>
-                </div>
-        </div>
-        <div style = "display:flex">
-             <div class = "information sec">
-            <h2 id = "name"></h2>
-            <h2 id = "symbol"></h2>
-            <h2 id= "number"></h2>
-            <p id = "description"></p>
-              </div>
-              <div id = "theCanvas" class = "top"></div>
-        </div>
-         <!-- <div class = "information">
+    <title>Title</title>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div class="idk">
+      <div class="sec metals">
+        <h1>Metals</h1>
+        <div class="elements temp" id="metals"></div>
+      </div>
+      <div class="sec metalloids">
+        <h1>Metalloids</h1>
+        <div class="elements temp" id="metalloids"></div>
+      </div>
+      <div classs="sec">
+        <h1>Nonmetals</h1>
+        <div class="elements temp" id="nonmetals"></div>
+      </div>
+    </div>
+    <div style="display: flex">
+      <div class="information sec">
+        <h2 id="name"></h2>
+        <h2 id="symbol"></h2>
+        <h2 id="number"></h2>
+        <p id="description"></p>
+      </div>
+      <div id="theCanvas" class="top"></div>
+    </div>
+    <!-- <div class = "information">
             <h2 id = "name"></h2>
             <h2 id = "symbol"></h2>
             <h2 id= "number"></h2>
             <p id = "description"></p>
          </div>
          <div id = "theCanvas"></div> -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-        <script>
-            // JS
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script>
+      // JS
 
-            const elements = [{
-                name: "Hydrogen",
-                atomicNumber: 1,
-                symbol: "H",
-                description: `Discovery: Hydrogen was discovered in 1766 by Henry Cavendish <br> Roots of its name: Came from the Greek word "Hydro", which means water, and "Genes", which means creator. Together it means "water-former" <br> Interesting fact/trivia: Hydrogen can turn into a metal at extremely high pressures.`,
-                type: "nonmetal"
-                },
-                {
-                    name: "Helium",
-                    atomicNumber: 2,
-                    symbol: "He",
-                    description: `Discovery: Helium was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "nonmetal"
-                },
-                {
-                    name: "Lithium",
-                    atomicNumber: 3,
-                    symbol: "Li",
-                    description: `Discovery: Lithium was discovered in 1817 by Johan August Arfwedson. <br> Roots of its name: From the Greek word "lithos," which means "stone". Was called this because it was discovered in a solid mineral instead of a plant. <br> 
+      const elements = [
+        {
+          name: "Hydrogen",
+          atomicNumber: 1,
+          symbol: "H",
+          description: `Discovery: Hydrogen was discovered in 1766 by Henry Cavendish <br> Roots of its name: Came from the Greek word "Hydro", which means water, and "Genes", which means creator. Together it means "water-former" <br> Interesting fact/trivia: Hydrogen can turn into a metal at extremely high pressures.`,
+          type: "nonmetal",
+        },
+        {
+          name: "Helium",
+          atomicNumber: 2,
+          symbol: "He",
+          description: `Discovery: Helium was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "nonmetal",
+        },
+        {
+          name: "Lithium",
+          atomicNumber: 3,
+          symbol: "Li",
+          description: `Discovery: Lithium was discovered in 1817 by Johan August Arfwedson. <br> Roots of its name: From the Greek word "lithos," which means "stone". Was called this because it was discovered in a solid mineral instead of a plant. <br> 
                     Interesting fact/trivia: Its one of only three elements created in significant amounts during the Big Bang, alongside hydrogen and helium. Some of the lithium on Earth today is 13.8 billion year old cosmic leftovers. (If the 13.8 billion years measured as a year the whole of human history would just be the last 2 seconds.)
 
 `,
-                    type: "metal"
-                },
-                {
-                    name: "Nitrogen",
-                    atomicNumber: 7,
-                    symbol: "N",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "nonmetal"
-                },
-                {
-                    name: "Oxygen",
-                    atomicNumber: 8,
-                    symbol: "O",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "nonmetal"
-                },
-                {
-                    name: "Aluminum",
-                    atomicNumber: 13,
-                    symbol: "Al",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "metalloids"
-                },
-                {
-                    name: "Phosphorus",
-                    atomicNumber: 15,
-                    symbol: "P",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "nonmetal"
-                },
-                {
-                    name: "Sulfur",
-                    atomicNumber: 16,
-                    symbol: "S",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "nonmetal"
-                },
-                {
-                    name: "Argon",
-                    atomicNumber: 18,
-                    symbol: "Ar",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "nonmetal"
-                },
-                {
-                    name: "Potassium",
-                    atomicNumber: 19,
-                    symbol: "K",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "metal"
-                },
-                {
-                    name: "Calcium",
-                    atomicNumber: 20,
-                    symbol: "Ca",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "metal"
-                },
-                {
-                    name: "Bromine",
-                    atomicNumber: 35,
-                    symbol: "Br",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "nonmetal"
-                },
-                {
-                    name: "Silver",
-                    atomicNumber: 47,
-                    symbol: "Ag",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "metal"
-                }, 
-                {
-                    name: "Cesium",
-                    atomicNumber: 55,
-                    symbol: "Cs",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "metal"
-                },
-                {
-                    name: "Gold",
-                    atomicNumber: 79,
-                    symbol: "Au",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "metal"
-                },
-                {
-                    name: "Lawrencium",
-                    atomicNumber: 103,
-                    symbol: "Lr",
-                    description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
-                    type: "metal"
-                },
-            ]
-            },
-        {
-            name: "Helium",
-            atomicNumber: 2,
-            symbol: "He",
-            description: "He is ...",
-            type: "nonmetal"
+          type: "metal",
         },
-    {
-        name: "Aluminum",
-        atomicNumber: 13,
-        symbol: "Al",
-        description: "Al is ....",
-        type: "metalloid"
-    },
-    {
-        name:"Lithium",
-        atomicNumber: 3,
-        symbol: "Li",
-        description: "Li is...",
-        type: "metal"
-    }]
-            var atomicName
-            var atomicSymbol;
-            var atomicNumber
-            var description;
-            var clicked = false
-            var typeOfElement;
-            elements.forEach(function (el) {
-                const newSpan = document.createElement("span");
-                newSpan.innerHTML = el.symbol;
-                newSpan.id = el.atomicNumber;
-                newSpan.setAttribute("data-atomic-number", el.atomicNumber);
-                newSpan.setAttribute("data-symbol", el.symbol);
-                newSpan.setAttribute("data-desc", el.description);
-                newSpan.setAttribute("data-atomic-name", el.name);
-                newSpan.setAttribute("data-type",el.type)
-                const metalloids = document.querySelector("#metalloids");
-                const nonmetals = document.querySelector("#nonmetals");
-                if (el.type === "metalloid") {
-                    metalloids.appendChild(newSpan);
-                } else if (el.type === "nonmetal"){
-                    nonmetals.appendChild(newSpan);
-                }
-                else{
-                    metals.appendChild(newSpan)
-                }
-            })
-            document.querySelectorAll('span').forEach(function(eachElement){
-                eachElement.addEventListener("click", function(event){
-                    atomicName = event.target.dataset.atomicName
-                    atomicSymbol = event.target.dataset.symbol
-                    atomicNumber = event.target.dataset.atomicNumber
-                    description = event.target.dataset.desc
-                    typeOfElement = event.target.dataset.type
-                    clicked = true
-                    document.querySelector('#name').innerHTML = "Atomic Name: " + atomicName
-                    document.querySelector('#symbol').innerHTML = "Atomic Symbol: " + atomicSymbol
-                    document.querySelector('#number').innerHTML = "Atomic Number: " + atomicNumber
-                    document.querySelector('#description').innerHTML = description
-                })
-            })
+        {
+          name: "Nitrogen",
+          atomicNumber: 7,
+          symbol: "N",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "nonmetal",
+        },
+        {
+          name: "Oxygen",
+          atomicNumber: 8,
+          symbol: "O",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "nonmetal",
+        },
+        {
+          name: "Aluminum",
+          atomicNumber: 13,
+          symbol: "Al",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "metalloids",
+        },
+        {
+          name: "Phosphorus",
+          atomicNumber: 15,
+          symbol: "P",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "nonmetal",
+        },
+        {
+          name: "Sulfur",
+          atomicNumber: 16,
+          symbol: "S",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "nonmetal",
+        },
+        {
+          name: "Argon",
+          atomicNumber: 18,
+          symbol: "Ar",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "nonmetal",
+        },
+        {
+          name: "Potassium",
+          atomicNumber: 19,
+          symbol: "K",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "metal",
+        },
+        {
+          name: "Calcium",
+          atomicNumber: 20,
+          symbol: "Ca",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "metal",
+        },
+        {
+          name: "Bromine",
+          atomicNumber: 35,
+          symbol: "Br",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "nonmetal",
+        },
+        {
+          name: "Silver",
+          atomicNumber: 47,
+          symbol: "Ag",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "metal",
+        },
+        {
+          name: "Cesium",
+          atomicNumber: 55,
+          symbol: "Cs",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "metal",
+        },
+        {
+          name: "Gold",
+          atomicNumber: 79,
+          symbol: "Au",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "metal",
+        },
+        {
+          name: "Lawrencium",
+          atomicNumber: 103,
+          symbol: "Lr",
+          description: `Discovery: ... was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          type: "metal",
+        },
 
-            function setup() {
-                var canvas = createCanvas(700, 440);
-                canvas.parent("theCanvas")
-                frameRate(5)
+        {
+          name: "Helium",
+          atomicNumber: 2,
+          symbol: "He",
+          description: "He is ...",
+          type: "nonmetal",
+        },
+        {
+          name: "Aluminum",
+          atomicNumber: 13,
+          symbol: "Al",
+          description: "Al is ....",
+          type: "metalloid",
+        },
+        {
+          name: "Lithium",
+          atomicNumber: 3,
+          symbol: "Li",
+          description: "Li is...",
+          type: "metal",
+        },
+      ];
+      var atomicName;
+      var atomicSymbol;
+      var atomicNumber;
+      var description;
+      var clicked = false;
+      var typeOfElement;
+      elements.forEach(function (el) {
+        const newSpan = document.createElement("span");
+        newSpan.innerHTML = el.symbol;
+        newSpan.id = el.atomicNumber;
+        newSpan.setAttribute("data-atomic-number", el.atomicNumber);
+        newSpan.setAttribute("data-symbol", el.symbol);
+        newSpan.setAttribute("data-desc", el.description);
+        newSpan.setAttribute("data-atomic-name", el.name);
+        newSpan.setAttribute("data-type", el.type);
+        const metalloids = document.querySelector("#metalloids");
+        const nonmetals = document.querySelector("#nonmetals");
+        if (el.type === "metalloid") {
+          metalloids.appendChild(newSpan);
+        } else if (el.type === "nonmetal") {
+          nonmetals.appendChild(newSpan);
+        } else {
+          metals.appendChild(newSpan);
+        }
+      });
+      document.querySelectorAll("span").forEach(function (eachElement) {
+        eachElement.addEventListener("click", function (event) {
+          atomicName = event.target.dataset.atomicName;
+          atomicSymbol = event.target.dataset.symbol;
+          atomicNumber = event.target.dataset.atomicNumber;
+          description = event.target.dataset.desc;
+          typeOfElement = event.target.dataset.type;
+          clicked = true;
+          document.querySelector("#name").innerHTML =
+            "Atomic Name: " + atomicName;
+          document.querySelector("#symbol").innerHTML =
+            "Atomic Symbol: " + atomicSymbol;
+          document.querySelector("#number").innerHTML =
+            "Atomic Number: " + atomicNumber;
+          document.querySelector("#description").innerHTML = description;
+        });
+      });
+
+      function setup() {
+        var canvas = createCanvas(700, 440);
+        canvas.parent("theCanvas");
+        frameRate(5);
+      }
+
+      function draw() {
+        if (clicked == true) {
+          background(200);
+          if (atomicSymbol == "Hg" || atomicSymbol == "Br") {
+            for (var x = 10; x < width - 5; x += 12) {
+              for (var y = height * 0.75; y < height; y += 10) {
+                ellipse(x + random(-5, 5), y + random(-5, 5), 10);
+              }
             }
-
-            function draw() {
-                if (clicked == true){
-                    background(200)
-                   if (atomicSymbol == "Hg" || atomicSymbol == "Br"){
-                        for (var x = 10;x < width - 5;x += 12){
-                            for (var y = height * 0.75;y < height;y += 10){
-                                ellipse(x + random(-5, 5),y + random(-5,5),10)
-                            }
-                        }
-                    }
-                    else if (typeOfElement == "metal" || typeOfElement == "metalloid"){
-                        for (var x = 10;x < width - 5;x += 12){
-                            for (var y = height * 0.75;y < height;y += 10){
-                                ellipse(x,y,10)
-                            }
-                        }
-                    }
-                    else if (typeOfElement == "nonmetal"){
-                        for (var x = 10;x < width - 5;x += 50){
-                            for (var y = 10;y < height/2.5;y += 50){
-                                // ellipse(x + random(-5, 5),y + random(-5,5),10)
-                                if (random(100) > 50){
-                                     ellipse(x + random(-5, 5),y + random(-5,5),10)
-                                }
-                            }
-                        }
-                    }
-                }
+          } else if (typeOfElement == "metal" || typeOfElement == "metalloid") {
+            for (var x = 10; x < width - 5; x += 12) {
+              for (var y = height * 0.75; y < height; y += 10) {
+                ellipse(x, y, 10);
+              }
             }
-
-        </script>
-    </body>
+          } else if (typeOfElement == "nonmetal") {
+            for (var x = 10; x < width - 5; x += 50) {
+              for (var y = 10; y < height / 2.5; y += 50) {
+                // ellipse(x + random(-5, 5),y + random(-5,5),10)
+                if (random(100) > 50) {
+                  ellipse(x + random(-5, 5), y + random(-5, 5), 10);
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
