@@ -3,10 +3,486 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Periodical 2026</title>
+
+    <!--Inter font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=BioRhyme:wght@200..800&family=Dongle&family=Gafata&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Petrona:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>title</h1>
-    <nav><!--- nav bar --></nav>
+    <p id="home">home</p>
+    <nav class="navbar fixed-top bg-body-tertiary navbar-expand-lg shadow" data-bs-theme="light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 inter-regular">Periodical 2026</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link inter-regular" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link inter-regular" aria-current="page" href="#unit-content">Review</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid spacing" id="daily-element">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-12 align-items-center">
+                    <p class="inter-bold">Element of the day</p>
+                    <h1 class="inter-bold" id="element-name">Placeholder</h1>
+                    <p class="inter-regular"id="info">Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</p>
+                    <div id="button-align">
+                        <a class="btn btn-dark shadow inter-regular" href="periodicTable.html">Periodic table</a>
+                        <a class="btn btn-outline-dark shadow inter-regular" href="#unit-content">Browse Units</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12 align-self-flex-end">
+                    <div class="container shadow" id="element-card">
+                        <img src="" alt="element icon pending">
+                        <div class="box">
+                            <p class="inter-regular sub-title">Discovery</p>
+                            <p class="inter-bold">Placeholder placholder</p>
+                        </div>
+                        <div class="box">
+                            <p class="inter-regular sub-title">Name roots</p>
+                            <p class="inter-bold">Placeholder placholder</p>
+                        </div>
+                        <div class="box">
+                            <p class="inter-regular sub-title">Interesting fact</p>
+                            <p class="inter-bold">Placeholder placholder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid spacing" id="unit-content">
+        <div class="container">
+            <p class="inter-bold">AP Chemistry content resources</p>
+            <h3 class="inter-bold">Unit content reviews</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-12">
+                    <div class="units">
+                        <a href="unit-1.html">
+                            <p class="inter-regular">Unit 1</p>
+                            <p class="inter-bold">Atomic stuctures and properties</p>
+                            <p class="inter-regular">Placeholder placeholder placeholder placeholder</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="units">
+                        <a href="unit-2.html">
+                            <p class="inter-regular">Unit 2</p>
+                            <p class="inter-bold">Compound structure and properties</p>
+                            <p class="inter-regular">Placeholder placeholder placeholder placeholder</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 ">
+                    <div class="units">
+                        <a href="unit-3.html">
+                            <p class="inter-regular">Unit 3</p>
+                            <p class="inter-bold">Properties of substances and mixtures</p>
+                            <p class="inter-regular">Placeholder placeholder placeholder placeholder</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-12">
+                    <div class="units">
+                        <a href="unit-4.html">
+                            <p class="inter-regular">Unit 4</p>
+                            <p class="inter-bold">Chemical reactions</p>
+                            <p class="inter-regular">Placeholder placeholder placeholder placeholder</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="units">
+                        <a href="unit-5.html">
+                            <p class="inter-regular">Unit 5</p>
+                            <p class="inter-bold">Kinetics</p>
+                            <p class="inter-regular">Placeholder placeholder placeholder placeholder</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 ">
+                    <div class="units">
+                        <a href="unit-6.html">
+                            <p class="inter-regular">Unit 6</p>
+                            <p class="inter-bold">Thermochemistry</p>
+                            <p class="inter-regular">Placeholder placeholder placeholder placeholder</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-12">
+                    <div class="units">
+                        <a href="unit-7.html">
+                            <p class="inter-regular">Unit 7</p>
+                            <p class="inter-bold">Equilibrium</p>
+                            <p class="inter-regular">Placeholder placeholder placeholder placeholder</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="units">
+                        <a href="unit-8.html">
+                            <p class="inter-regular">Unit 8</p>
+                            <p class="inter-bold">Acids and bases</p>
+                            <p class="inter-regular">Placeholder placeholder placeholder placeholder</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 ">
+                    <div class="units">
+                        <a href="unit-9.html">
+                            <p class="inter-regular">Unit 9</p>
+                            <p class="inter-bold">Thermodynamics and electrochemistry</p>
+                            <p class="inter-regular">Placeholder placeholder placeholder placeholder</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid spacing" id="credits">
+        <div class="container">
+        <h3 class="inter-bold">Meet our team</h3>
+            <div class="carousel carousel-dark slide" id="carousel-team">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="profiles">
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="profiles">
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="profiles">
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="profiles">
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="profiles">
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="picture">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="160px" height="160px">
+                                </div>
+                                <div class="description">
+                                    <p class="name inter-bold">Name - Role</p>
+                                    <p class="inter-regular">"Placeholder placeholder placeholder placeholder"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-team" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-team" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="shadow-lg" id="footer">
+        <footer>
+            <div>
+                <a class="inter-regular" href="https://www.hstat.org/" target="_blank">Our school</a>
+            </div>
+            <div>
+                <a class="inter-regular" href="mailto:ltorres25@schools.nyc.gov" target="_blank">ltorres25@schools.nyc.gov</a>
+            </div>
+            <div>
+                <a class="inter-regular" href="https://maps.app.goo.gl/sKHwJFH19ot9GF3d6" target="_blank">Address</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
