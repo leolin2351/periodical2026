@@ -3,7 +3,7 @@
 * [ ] Homepage 
     * [ ] Top section: Show the element of the day and a button to go to the elements page
     * [ ] Display Units
-    * [ ] Credits
+    * [ ] Credits - Tina and Jolee
 
 * [ ] Template for Units
     * [X] Navbar - Jolee
@@ -23,8 +23,11 @@
     * [ ] Moving through flashcards
     * [ ] Information
 
-* [ ] Quiz 
-    * [ ] UI
+* [ ] Other
+    * [ ] Chemistry Game - Edward and Alex
+    * [ ] Quiz
+        * [ ] UI - Rain
+        * [ ] Function - Leo and Ryan
 
 * [ ] Elements of the Periodic Table:
     * [X] Element phase display - William
@@ -48,7 +51,7 @@
 
 ## Wait for Writers to give information first
 
-* [ ] Add information/text on website:
+* [ ] Add information/text on website (Units): - Gabriel and Nancy 
     * [ ] Unit 1 information/text
         * [ ] Real world connection:
         * [ ] Misconception:
