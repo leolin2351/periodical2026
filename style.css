@@ -89,8 +89,9 @@ img{
   display:flex;
   flex-wrap: wrap;
   gap: 45px;
-  justify-content: start;
+  justify-content: flex-start;
   row-gap: 60px;
+  min-height: 450px;
 }
 /* .top-row{
   margin-bottom: 55px;
@@ -108,6 +109,7 @@ img{
 .description {
   margin: auto;
   width:218px;
+  font-size: 14.5px;
 }
 .name{
   margin: 16px 0px 5px 0px;
