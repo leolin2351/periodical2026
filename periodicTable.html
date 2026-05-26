@@ -80,6 +80,18 @@
       h1{
         text-align:center
       }
+      @media (max-width:1200px) and (min-width:401px){
+        h1{
+            text-align:left;
+            margin-left:111px
+        }
+      }
+      @media(max-width:400px){
+        h1{
+            text-align:center;
+        }
+      }
+
     </style>
 
     <title>Title</title>
@@ -157,7 +169,7 @@
           name: "Oxygen",
           atomicNumber: 8,
           symbol: "O",
-          description: `Discovery: Oxygen was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          description: `Discovery: Oxygen was discovered in August 1st 1774 by Joseph Priestley.  <br> Roots of its name: Its name means acid former because Antoine Lavoisier believed Oxygen was an essential component of all acid <br> Interesting fact/trivia: Oxygen is the most abundant element in the Earth's crust; over 46% of the weight of the earth's crust is Oxygen!!!`,
           type: "nonmetal",
         },
         {
@@ -199,7 +211,7 @@
           name: "Calcium",
           atomicNumber: 20,
           symbol: "Ca",
-          description: `Discovery: Calcium was discovered in ... by ... <br> Roots of its name: ... <br> Interesting fact/trivia: ...`,
+          description: `Discovery: Calcium was discovered by Sir Humphry Davy in 1808 <br> Roots of its name: Calcium was first found within limestone (CaO and mercuric oxide), hence the name Calcium which is derived from the Latin word “calx”, meaning lime. <br> Interesting fact/trivia: Calcium is the most abundant mineral in the human body, with 99% stored in bones and teeth, and making up to roughly 2 pounds of an average adult’s body.`,
           type: "metal",
         },
         {
@@ -306,7 +318,7 @@
       var w = 700;
       var h = 440;
       function setup() {
-        if (window.innerWidth < 1115){
+        if (window.innerWidth <= 1115){
             w = window.innerWidth
         }
         var canvas = createCanvas(w, h);
