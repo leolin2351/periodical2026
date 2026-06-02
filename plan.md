@@ -51,15 +51,15 @@
 ## Wait for Writers to give information first
 
 * [ ] Add information/text on website (Units): - Gabriel and Nancy
-    * [ ] Unit 1 information/text - Cammi and Winnie
-        * [ ] Real world connection:
-        * [ ] Misconception:
-        * [ ] Takeaways:
-            * [ ] 1
-            * [ ] 2
-            * [ ] 3
-            * [ ] 4
-            * [ ] 5
+    * [X] Unit 1 information/text - Cammi and Winnie
+        * [X] Real world connection:
+        * [X] Misconception:
+        * [X] Takeaways:
+            * [X] 1
+            * [X] 2
+            * [X] 3
+            * [X] 4
+            * [X] 5
     * [ ] Unit 2 information/text - Farzona and Jayden Kuu
         * [ ] Real world connection:
         * [ ] Misconception:
@@ -69,15 +69,15 @@
             * [ ] 3
             * [ ] 4
             * [ ] 5
-    * [ ] Unit 3 information/text - Qilin Xue
-        * [ ] Real world connection:
-        * [ ] Misconception:
-        * [ ] Takeaways:
-            * [ ] 1
-            * [ ] 2
-            * [ ] 3
-            * [ ] 4
-            * [ ] 5
+    * [X] Unit 3 information/text - Qilin Xue
+        * [X] Real world connection:
+        * [X] Misconception:
+        * [X] Takeaways:
+            * [X] 1
+            * [X] 2
+            * [X] 3
+            * [X] 4
+            * [X] 5
     * [ ] Unit 4 information/text - Lizzy
         * [ ] Real world connection:
         * [ ] Misconception:
@@ -96,15 +96,15 @@
             * [ ] 3
             * [ ] 4
             * [ ] 5
-    * [ ] Unit 6 information/text - Zheng
-        * [ ] Real world connection:
-        * [ ] Misconception:
-        * [ ] Takeaways:
-            * [ ] 1
-            * [ ] 2
-            * [ ] 3
-            * [ ] 4
-            * [ ] 5
+    * [X] Unit 6 information/text - Zheng
+        * [X] Real world connection:
+        * [X] Misconception:
+        * [X] Takeaways:
+            * [X] 1
+            * [X] 2
+            * [X] 3
+            * [X] 4
+            * [X] 5
     * [ ] Unit 7 information/text - Sara and Citlali
         * [ ] Real world connection:
         * [ ] Misconception:
@@ -114,15 +114,15 @@
             * [ ] 3
             * [ ] 4
             * [ ] 5
-    * [ ] Unit 8 information/text - Jayden Cen and Jacky
-        * [ ] Real world connection:
-        * [ ] Misconception:
-        * [ ] Takeaways:
-            * [ ] 1
-            * [ ] 2
-            * [ ] 3
-            * [ ] 4
-            * [ ] 5
+    * [X] Unit 8 information/text - Jayden Cen and Jacky
+        * [X] Real world connection:
+        * [X] Misconception:
+        * [X] Takeaways:
+            * [X] 1
+            * [X] 2
+            * [X] 3
+            * [X] 4
+            * [X] 5
     * [ ] Unit 9 information/text - Santiago
         * [ ] Real world connection:
         * [ ] Misconception:
