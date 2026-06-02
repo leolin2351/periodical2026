@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .card-body {
+        padding-left: 10px !important;
+        padding-top: 5px !important;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(165, 164, 164);
+        border-radius: 20px;
+      }
+      .hidecards {display: none}
+
+      .front {text-align: center; padding-top: 18px}
+      .back {text-align: center; padding-top: 18px}
+    </style>
     <title>Unit X</title>
 
     <!--Inter font-->
@@ -15,6 +29,7 @@
   </head>
   <body>
     <!-- Template UI for every unit page -->
+
 
     <!--Navbar-->
      <p id="home">home</p>
@@ -45,27 +60,64 @@
       <p></p>
     </div>
 
+    <hr>
+
+    <div class= "container-fluid spacing">
+      <h1 class= "inter-bold">Key Vocabulary</h1>
+      <p>Click on a card to flip it and learn its important information!</p>
+    <div class="row">
+
+      <!--Will make proper cards later, just a placeholder for visual-->
+      <div class="col-md-4">
+        <div class="card-body card" id="card">
+          <h4 class="card-title front" id="front">Word</h4>
+          <p class="back">Info</p>
+        </div>
+      </div>
+
+        <div class="col-md-4">
+        <div class="card-body card" id="card">
+          <h4 class="card-title front" id="front">Word</h4>
+          <p class="back">Info</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-body card" id="card">
+          <h4 class="card-title front" id="front">Word</h4>
+          <p class="back">Info</p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    
+    <br>
+    <hr>
     <br>
 
-    <div class="container-fluid spacing"> 
-      <h3 class="inter-bold">FLASHCARDS</h3>
-      <h1 class="inter-bold">Key Vocabulary</h1>
-      <p>Click on a card to flip it and see the definition.</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <u style="color: green"><h3 class="inter-bold" style="color: green">CORE CONCEPTS</h3></u>
+        <h1 class="inter-bold">Main Takeaways:</h1>
+        </div>
+        <div class="col">
+          <u style="color: red;"><h3 class="inter-bold" style="color: red">WATCH OUT</h3></u>
+          <h1 class="inter-bold">Common Misconceptions:</h1>
+        </div> 
+      </div>
+      
+        
+  
+
+      
     </div>
 
     <br>
 
     <div class="container-fluid spacing"> 
-      <h3 class="inter-bold">CORE CONCEPTS</h3>
-      <h1 class="inter-bold">Main Takeaways</h1>
-
-      <h3 class="inter-bold">WATCH OUT</h3>
-      <h1 class="inter-bold">Common Misconception</h1>
-    </div>
-
-    <br>
-
-    <div class="container-fluid spacing"> 
+      <!--Quiz-->
     </div>
 
     <div class="shadow-lg" id="footer">
@@ -81,7 +133,28 @@
             </div>
         </footer>
     </div>
+    <script>
+      // Flashcard JS
+      var cards = document.querySelectorAll(".card")
+      var front = document.querySelectorAll(".front")
+      var backs = document.querySelectorAll(".back")
 
+      backs.forEach(function(back){
+        back.classList.add("hidecards")
+      })
+     
+      // figured out thanks to Mr. Mueller
+      cards.forEach(function(card){
+        card.addEventListener("click", function(){
+          console.log(card.children)
+        card.children[0].classList.toggle("hidecards")
+        card.children[1].classList.toggle("hidecards")
+      })
+      })
+        
+      // })
+      
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
