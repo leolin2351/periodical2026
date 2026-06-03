@@ -29,15 +29,15 @@
         * [ ] UI - Rain
         * [ ] Function - Leo and Ryan
 
-* [ ] Elements of the Periodic Table:
+* [X] Elements of the Periodic Table:
     * [X] Element phase display - William
-    * Elements - Darren
+    * [X] Elements - Darren
         * [X] Hydrogen (1) - Ryan
         * [X] Helium (2) - Gabriel
         * [X] Lithium (3) - Darren
-        * [ ] Nitrogen (7) - Yiwen
+        * [X] Nitrogen (7) - Yiwen
         * [X] Oxygen (8) - Leo
-        * [ ] Phosphorus (15) - Shi Jun
+        * [X] Phosphorus (15) - Shi Jun
         * [X] Sulfur (16) - Rain
         * [X] Argon (18) - William
         * [X] Potassium (19) - Nancy
@@ -46,7 +46,7 @@
         * [X] Silver (47) - Edward
         * [X] Cesium (55) - Abdel
         * [X] Gold (79) - Alexander
-        * [ ] Lawrencium (103) - Lixin
+        * [X] Lawrencium (103) - Lixin
 
 ## Wait for Writers to give information first
 
