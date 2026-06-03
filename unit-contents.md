@@ -200,21 +200,32 @@ When the volume of the container is doubled from 1L to 2L, the partial pressure 
   - Answer Choice C
   - Answer Choice D (Correct Choice)
 
-  # Unit 5
+  # Unit 5 Kinetics
  ### Vocabulary List:
- - Vocab 1
- - Vocab 2
- - Vocab 3
+ - Kinetics: studies the factors that affect the speed of a chemical reaction 
+ - Rate determining step: the slowest elementary step in a reaction mechanism that is responsible for determining the overall rate
+ - Collision Theory: particles need to collide with sufficient energy and proper orientation (more likely experience effective collisions favoring the formation of products)
+ - Catalyst: provide an alternative pathway with a lower activation energy
+ - Elementary Step: one of the chemical reaction inside a multistep reaction
+ - Reaction Energy Profile: a diagram that shows the change in potential energy throughout a reaction mechanism
+ - Reaction Mechanism: a proposed series of elementary steps that add up to a complete chemical reaction.
+ - Reaction Rate: the change in concentration of reactants that disappear and products that appear over a specific time interval in a chemical reaction. 
+ - Reaction Order: the power of the concentration of individual species in a rate law expression that contributes to the overall rate of the reaction
+ - Half-life Reaction: tied to a 1st order kinetics (exponential decay graph) when the concentration of the species decreases by half under a specific interval of time. 
+ - Integrated Rate Law: mathematical formula to determine the change in concentration of the original sample and the new sample after a given time and depends on the reaction order
+ - Homogeneous Catalyst: when adding a catalyst, the phase of the catalyst is the same as the reactants.
+ - Heterogeneous Catalyst: when adding a catalyst, if the phase of the catalyst is not the same as the reactants.
+ - Multistep Reaction Energy Profile: a diagram that can include intermediates with the change in the potential energy throughout a reaction mechanism
 ### Main Takeaways:
-- Takeaway 1
-- Takeaway 2
-- Takeaway 3
-- Takeaway 4
-- Takeaway 5
+- Rate increased when a solid is broken into pieces (increase in surface area), higher concentration of reactants (more particles will experience frequent collisions), high temperature (high average kinetic energy, more likely for particles to move quicker and overcome energy barrier, adding a catalyst (directly providing an alternative pathway requiring a lower activation energy for reaction to proceed, decreasing the volume of the container if the reaction involves gases.) (particles are closer together, more particles will experience frequent collisions).
+- In a multistep reaction mechanism, to find if a reaction mechanism matches , then you need to test it experimentally. 
+- The overall balanced chemical reaction (not to be confused with overall rate → points to the rate law of the rate determining step) can be found from the reaction mechanism by adding up the steps and eliminating catalysts and intermediates.
+- To figure out what order given a [M] vs time, ln[M] vs time, or 1/[M] vs time graph, the order can be evaluated wherever a linear line appears within one of these given graphs. 
+- The rate constant of a 0th order reaction is equal to the negative slope of the line graph.
 ### Misconception:
-- A misconception is xxxx
+- The student may think that the rate determining step will keep both intermediates and catalysts, however the slow step can include catalysts but must eliminate any intermediates if the previous step is a fast equilibrium to derive the rate law.
 ### Real World Connection:
-- Paragraph connecting unit to real world...
+- In modern airbags, there is a multistep reaction that occurs with the decomposition of solid sodium azide. The crash sensor ignites only when there is a sudden drop in the car’s momentum. When the temperature rises, the chemical bonds of sodium azide break, forming nitrogen gas. The deployment of an airbag demonstrates how fast particles break apart and react resulting in the rapid production of nitrogen gas. Hence, the nitrogen gas is ultimately used to reduce the impact force created by the crash.
 ### Quiz:
 - Question 1
   - Answer Choice A
@@ -406,21 +417,40 @@ Water accepts H+, which turns into H3O, and in this case water acts as a base
   - Answer Choice C
   - Answer Choice D (Correct Choice)
 
-  # Unit 9
+  # Unit 9 Applications of Thermodynamics
  ### Vocabulary List:
- - Vocab 1
- - Vocab 2
- - Vocab 3
+ - Anode- The electrode where oxidation occurs.
+ - Cathode- The electrode where reduction occurs.
+ - Oxidation- Loss of electrons
+ - Reduction- Gain of electrons
+ - Redox reaction- A reaction involving both oxidation and reduction.
+ - System- specific portion of matter or chemical species being observed.
+ - Surroundings- Everything outside of the system
+ - Exothermic- process that releases heat.
+ - Endothermic- process that absorbs heat.
+ - Enthalpy- The total heat energy of a system.
+ - Entropy- The measure of randomness in a system.
+ - Gibbs free energy- Energy available to do useful work.
+ - Calorimetry- The measurement of heat changes in chemical or physical processes. 
+ - Galvanic cell- An electrochemical cell that produces electricity from a spontaneous redox reaction. 
+ - Salt bridge- A device that allows ions to move between two half cells and maintain neutrality
+ - Electron transfer- Electrons moving from one substance to another.
+ - Faraday’s law- It states that, the amount of substance produced in electrolysis is proportional to the electric charge passed.
+ - Cell potential- The voltage produced by an electrochemical cell.
+ - Spontaneous- A process that occurs naturally without external energy input.
+ - First law of thermodynamics- Energy cannot be created or destroyed. Only transferred or transformed.
+ - Second law of thermodynamics- The entropy of the universe tends to increase in spontaneous reactions.
+ - Hess’s law- The total enthalpy change of a reaction is the same no matter what pathway is taken.
 ### Main Takeaways:
-- Takeaway 1
-- Takeaway 2
-- Takeaway 3
-- Takeaway 4
-- Takeaway 5
+- Thermodynamics helps us predict whether a reaction is spontaneous by using entropy, enthalpy and Gibbs free energy.
+- If delta G is negative, the process is thermodynamically favored. If delta G is positive it is thermodynamically unfavored. 
+- Energy is conserved in chemical reactions but could be transferred as heat.
+- The direction of electron flow in electrochemical cell determines the voltage produced and allows electricity to be generated.
+- At equilibrium delta G is equal to 0. The relationship between free energy and equilibrium constant is ΔG∘=−RTlnK
 ### Misconception:
-- A misconception is xxxx
+- A common misconception regarding this unit is that all spontaneous reactions happen quickly. This is because although a reaction may be thermodynamically spontaneous, it might take place extremely slowly because of the activation energy barrier.
 ### Real World Connection:
-- Paragraph connecting unit to real world...
+- Electronics that we use daily like smartphones, computers, electrical vehicles, etc., all rely on spontaneous redox reactions as they all use voltaic cells (batteries!). 
 ### Quiz:
 - Question 1
   - Answer Choice A
