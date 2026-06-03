@@ -19,7 +19,7 @@
 
 
 * [ ] Vocabulary list:
-    * [ ] Flashcard flipping system
+    * [X] Flashcard flipping system
     * [ ] Moving through flashcards
     * [ ] Information
 
@@ -60,7 +60,7 @@
             * [X] 3
             * [X] 4
             * [X] 5
-    * [ ] Unit 2 information/text - Farzona and Jayden Kuu
+    * [ ] Unit 2 information/text - Farzona and Jayden Khoo
         * [ ] Real world connection:
         * [ ] Misconception:
         * [ ] Takeaways:
@@ -87,15 +87,15 @@
             * [ ] 3
             * [ ] 4
             * [ ] 5
-    * [ ] Unit 5 information/text - Ronnie
-        * [ ] Real world connection:
-        * [ ] Misconception:
-        * [ ] Takeaways:
-            * [ ] 1
-            * [ ] 2
-            * [ ] 3
-            * [ ] 4
-            * [ ] 5
+    * [X] Unit 5 information/text - Ronnie
+        * [X] Real world connection:
+        * [X] Misconception:
+        * [X] Takeaways:
+            * [X] 1
+            * [X] 2
+            * [X] 3
+            * [X] 4
+            * [X] 5
     * [X] Unit 6 information/text - Zheng
         * [X] Real world connection:
         * [X] Misconception:
@@ -123,13 +123,13 @@
             * [X] 3
             * [X] 4
             * [X] 5
-    * [ ] Unit 9 information/text - Santiago
-        * [ ] Real world connection:
-        * [ ] Misconception:
-        * [ ] Takeaways:
-            * [ ] 1
-            * [ ] 2
-            * [ ] 3
-            * [ ] 4
-            * [ ] 5
+    * [X] Unit 9 information/text - Santiago
+        * [X] Real world connection:
+        * [X] Misconception:
+        * [X] Takeaways:
+            * [X] 1
+            * [X] 2
+            * [X] 3
+            * [X] 4
+            * [X] 5
 
