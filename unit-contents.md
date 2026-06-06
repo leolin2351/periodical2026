@@ -60,21 +60,33 @@ PUT ALL UNIT REVIEW CONTENT IN THE FORMAT BELOW TO BE ADDED TO DATABASE LATER
   - Answer Choice C
   - Answer Choice D (Correct Choice)
  
-# Unit 2
+# Unit 2 Compound Structures and Properties
  ### Vocabulary List:
- - Vocab 1
- - Vocab 2
- - Vocab 3
+ - Formal Charge: Valence Electrons-Nonbonding Electrons-Bonding Electrons
+ - Formal Charge: Valence Electrons-Nonbonding Electrons-Bonding Electrons
+ - Covalent Bonds: formed when nonmetal atoms share electron pairs. 
+ - VSEPR: (Valence Shell Electron Pair Repulsion) predicts geometry by minimizing electron group repulsion around the central atom.
+ - Metallic Bonding: involves a “sea” of delocalized electrons surrounding positive metal ion cores.
+ - Lewis Structure: diagram that shows the arrangement of valence electrons in a molecule or ion, including bonds and lone pairs.
+ - Octet rule: atoms tend to gain, lose, or share electrons in order to achieve 8 valence electrons, making them more stable like noble gases.
+ - Bond polarity: uneven sharing of electrons in a bond caused by differences in electronegativity between atoms. The more electronegative atom pulls the shared electrons closer to itself, creating partial positive and negative charges.
+ - Molecular polarity: refers to the overall distribution of charge in a molecule and depends on both bond polarity and molecular shape. A molecule is polar if its charges are unevenly distributed. 
+ - Expanded octet:occurs when an atom has more than 8 valence electrons. This usually happens with nonmetals in period 3 or higher because they have extra orbitals available.
+ - Lone pairs: pairs of valence electrons that are not involved in bonding and belong to only one atom. They affect molecular shape and bond angles because they repel other electrons strongly.
+ - Ionic bonds:formed when electrons are transferred from one atom to another, creating positively and negatively charged ions that are held together by electrostatic attraction.
+ - Hybridization: mixing of atomic orbitals to form new hybrid orbitals that explain bonding and molecular geometry in molecules.
+ - Bond angles: Angles formed between bonds around a central atom in a molecule. They are determined by electron repulsion and molecular geometry.
+ - Intramolecular forces: Intramolecular forces are the forces that hold atoms together within a molecule or compound, such as covalent, ionic, and metallic bonds.
 ### Main Takeaways:
-- Takeaway 1
-- Takeaway 2
-- Takeaway 3
-- Takeaway 4
-- Takeaway 5
+- VSEPR theory shows that electron groups spread out as much as possible, which creates specific shapes like tetrahedral or bent. Those shapes affect things like polarity, bond angles, and even how reactive the molecule is. Hybridization connects to this because it explains how orbitals mix together to match those shapes and bonding patterns.
+- A molecule is not automatically polar just because it has polar bonds. You also have to look at the shape of the molecule to see if the dipoles cancel out or not. For example, some molecules have polar bonds but are still nonpolar because the shape is perfectly symmetrical. This idea helps explain why different substances dissolve differently and why some molecules have stronger attractions than others.
+- Ionic, covalent, and metallic bonding all involve electrons, but they work in different ways and give substances different properties. Ionic bonds happen when electrons are transferred, covalent bonds happen when electrons are shared, and metallic bonding involves electrons moving freely through metals. These differences explain why metals conduct electricity, why ionic compounds are brittle, and why covalent compounds can be gases, liquids, or solids. 
+- Lewis structures show how electrons are arranged in molecules. Once you know how to draw them correctly using the octet rule, resonance, and formal charges, it becomes easier to figure out molecular geometry, polarity, and hybridization. A correct Lewis structure is usually the starting point for solving almost every problem in this topic. They’re basically the foundation for understanding molecular chemistry.
+- Single bonds are longer and weaker, while double and triple bonds are shorter and stronger because more electrons are being shared between atoms. Stronger bonds need more energy to break, which affects how stable and reactive molecules are. This helps explain why different molecules behave differently during chemical reactions.
 ### Misconception:
-- A misconception is xxxx
+- Intermolecular forces vs Intramolecular forces are a common concept where people misidentify dashed lines in diagrams to represent intramolecular covalent bonds within a molecule rather than intermolecular forces between molecules, particularly when analyzing diagrams. Intramolecular forces are the bonds in a molecule (covalent, Ionic, metallic) while intermolecular forces are attractions between molecules.  
 ### Real World Connection:
-- Paragraph connecting unit to real world...
+- Molecular shapes are important because they determine how molecules interact with receptors, which are specialized proteins on cells. This molecule and receptor idea explains how we taste things. Flavors like sweet, sour, salty, and bitter happen when molecules or ions in food fit into specific taste receptors on our tongue. When that happens, the receptors send signals to our brain, and that is how we actually experience flavor.  
 ### Quiz:
 - Question 1
   - Answer Choice A
@@ -97,7 +109,7 @@ PUT ALL UNIT REVIEW CONTENT IN THE FORMAT BELOW TO BE ADDED TO DATABASE LATER
   - Answer Choice C
   - Answer Choice D (Correct Choice)
 
-  # Unit 3
+  # Unit 3 Intermolecular Forces and Properties
  ### Vocabulary List:
  - Intermolecular force: Attraction between molecules.
  - Dipole - Dipole: Attraction between the positive end of a dipole and the negative end of another dipole 
@@ -163,7 +175,7 @@ When the volume of the container is doubled from 1L to 2L, the partial pressure 
   - Answer Choice C
   - Answer Choice D (Correct Choice)
 
-# Unit 4
+# Unit 4 Chemical Reactions
  ### Vocabulary List:
  - Vocab 1
  - Vocab 2
@@ -408,21 +420,31 @@ In reality breaking a chemical bond requires energy(absorption) which is an endo
   - Answer Choice C
   - Answer Choice D (Correct Choice)
 
-  # Unit 7
+  # Unit 7 Equilibrium
  ### Vocabulary List:
- - Vocab 1
- - Vocab 2
- - Vocab 3
+ - Common ion - An ion that comes from two different sources, and is shared between 2 or more compounds in the solution.
+ - Common ion effect - The decrease in solubility of an ionic compound when you add another compound that shares a common ion 
+ - Le Chatelier’s principle - if a dynamic equilibrium is disturbed by a change in conditions, the system will spontaneously shift its position of equilibrium to counteract that change and re-establish balance
+ - Equilibrium  - the rate of the forward and reverse reaction is the same. 
+ - Reversible Reaction - A reaction that can proceed in both directions, indicated by a double arrow
+ - Equilibrium Constant- A value that expresses the ratio of product concentration/pressure to reactant concentration/pressure, specific to a temperature
+ - Kc: Equilibrium constant based on molar concentration [M]
+ - Kp : Equilibrium constant based on partial pressure
+ - Reaction Quotient(Q) - Calculates the ratio of products to reactants at any point in time, used to compare with K to determine direction of shift
+ - Q < K: Reaction shifts right (towards products)
+ - Q > K: Reaction shifts left (Towards reactants)
+ - Q = K: System is at equilibrium
+ - ICE Chart - ( Initial, Change, Equilibrium) A tool used to calculate equilibrium concentrations from initial amounts. 
 ### Main Takeaways:
-- Takeaway 1
-- Takeaway 2
-- Takeaway 3
-- Takeaway 4
-- Takeaway 5
+- Equilibrium means that a reaction is moving forward and backwards at an equal rate. In other words it means that the forward and the reverse reactions are happening at the same speed. Although it is happening at the same rate that doesn't mean that the concentration of the products and of the reactants are the same. All it means is that the rate that the products are created is the same as the reactants are being consumed/made. The concentration of reactants and products remain constant, not equal.
+- The equilibrium of a reaction can shift when a reactant or product is added to the reaction. There is one solution, where everything is mixed. Adding to the solution will cause there to be a shift, although not noticeable necessarily, but there is a change in rate of a product or reactant being made. This is helpful to think about it as (there are no actual sides): If it's added to the products side of the written balanced equation, the reaction will shift to the reactants side. This happens because the system is recreating the equilibrium by creating more of the 	reactants, from the extra products. If it's added to the reactants side of the written balance equation, the reaction will shift to the products side. This happens because the system is recreating the equilibrium by creating more of the products, from the extra reactants. 
+- The reaction quotient (Q)is calculated exactly like (K), but uses non-equilibrium (initial) concentrations. Comparing (Q) to (K) tells you which way a reaction will shift to reach equilibrium
+- The equilibrium constant (Kc) for concentration, (Kp) for partial pressure) represents the ratio of products to reactants.The formula is written as products/reactants with stoichiometric coefficients as exponents. Rule -  Pure liquids(l) and pure solids (s) are never included in the equilibrium expression not variable.
+- A chemical process happens in multiple steps, the individual equilibrium steps link together mathematically. The overall equilibrium constant for the entire process is found by multiplying the constants of each individual step together (K overall = K1 x K2 x K3)
 ### Misconception:
-- A misconception is xxxx
+- Students often mistake equilibrium to mean a 50/50 split of chemicals, when it simply means the rates of the forward and reverse reactions are equal, so concentration remains constant. The rate does not change the amount. You can have 5 moles of one compound and 3 moles of another, and the reaction could still be at equilibrium. (This is also the same with other units of measure, not just mol).
 ### Real World Connection:
-- Paragraph connecting unit to real world...
+- The Haber-Bosch Process is an industrial process used to make ammonia by combining nitrogen gas from the air with hydrogen gas. Ammonia is important because it is used to make fertilizers that help crops grow and feed millions of people around the world. You may not realize but you are consuming nitrogen from the ammonia, consuming ammonia itself compared to nitrogen would be bad for us (poison). A very small amount of ammonia is added to your drinking water to help extend the disinfecting lifespan of chlorine. The Haber-Bosch Process involves chemical equilibrium and Le Châtelier’s Principle in order to function. The reaction is reversible, meaning it can go forward and backward: nitrogen and hydrogen can form ammonia, but ammonia can also break back down into the original gases. Based on the Le chatelier’s principle, a system which is at equilibrium will change to counteract the changes that are put on it. In a chemical industry, the yield has to be balanced and also have a fast rate of reaction. The temperature and pressure used are; 400C to 450C and 150atm to 200atm. The high temperature helps the reaction rate be more sufficient, while the high pressure favors the reaction rate and the equilibrium.
 ### Quiz:
 - Question 1
   - Answer Choice A

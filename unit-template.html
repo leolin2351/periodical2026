@@ -16,6 +16,8 @@
 
       .front {text-align: center; padding-top: 18px}
       .back {text-align: center; padding-top: 18px}
+
+      
     </style>
     <title>Unit X</title>
 
@@ -83,7 +85,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="card-body card text-bg-dark" id="card">
+        <div class="card-body card text-bg-example" id="card">
           <h4 class="card-title front" id="front">Word</h4>
           <p class="back">Info</p>
         </div>
@@ -95,20 +97,20 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       
-        <div class="card-body card text-bg-dark" id="card">
+        <div class="card-body card text-bg-example" id="card">
           <h4 class="card-title front" id="front">Word</h4>
           <p class="back">Info</p>
         </div>
       
     </div>
     <div class="carousel-item">
-        <div class="card-body card text-bg-dark" id="card">
+        <div class="card-body card text-bg-example" id="card">
           <h4 class="card-title front" id="front">Word</h4>
           <p class="back">Info</p>
         </div>
     </div>
     <div class="carousel-item">
-      <div class="card-body card text-bg-dark"  id="card">
+      <div class="card-body card text-bg-example"  id="card">
           <h4 class="card-title front" id="front">Word</h4>
           <p class="back">Info</p>
         </div>
@@ -134,25 +136,56 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <u style="color: green"><h3 class="inter-bold" style="color: green">CORE CONCEPTS</h3></u>
+          <p class="eyebrow">CORE CONCEPTS</p>
         <h1 class="inter-bold">Main Takeaways:</h1>
         </div>
         <div class="col">
-          <u style="color: red;"><h3 class="inter-bold" style="color: red">WATCH OUT</h3></u>
+          <p class="eyebrow">WATCH OUT</p>
           <h1 class="inter-bold">Common Misconceptions:</h1>
         </div> 
       </div>
-      
-        
-  
-
       
     </div>
 
     <br>
 
     <div class="container-fluid spacing"> 
-      <!--Quiz-->
+      <div style="max-width: 1000px;">
+
+    <p class="eyebrow">Check Your Knowledge</p>
+    <h1 class="fw-bold mb-1">Unit Quiz</h1>
+    <p class="text-muted mb-4">Select the best answer for each question to test your understanding.</p>
+
+    <!-- Question 1 -->
+    <div class="question-card">
+      <p class="question-text">1. This is a question?</p>
+      <label class="option"><input type="radio" name="q1" value="a"/> Answer A</label>
+      <label class="option"><input type="radio" name="q1" value="b"/> Answer B</label>
+      <label class="option"><input type="radio" name="q1" value="c"/> Answer C</label>
+      <label class="option"><input type="radio" name="q1" value="d"/> Answer D</label>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-card">
+      <p class="question-text">2. This is a question?</p>
+      <label class="option"><input type="radio" name="q2" value="a"/> Answer A</label>
+      <label class="option"><input type="radio" name="q2" value="b"/> Answer B</label>
+      <label class="option"><input type="radio" name="q2" value="c"/> Answer C</label>
+      <label class="option"><input type="radio" name="q2" value="d"/> Answer D</label>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-card">
+      <p class="question-text">3. This is a question?</p>
+      <label class="option"><input type="radio" name="q3" value="a"/> Answer A</label>
+      <label class="option"><input type="radio" name="q3" value="b"/> Answer B</label>
+      <label class="option"><input type="radio" name="q3" value="c"/> Answer C</label>
+      <label class="option"><input type="radio" name="q3" value="d"/> Answer D</label>
+    </div>
+
+    <button class="btn-submit">Submit</button>
+
+  </div>
     </div>
 
     <div class="shadow-lg" id="footer">
@@ -168,6 +201,7 @@
             </div>
         </footer>
     </div>
+  
     <script>
       // Flashcard JS
       var cards = document.querySelectorAll(".card")
