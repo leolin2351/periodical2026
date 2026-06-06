@@ -226,27 +226,123 @@ When the volume of the container is doubled from 1L to 2L, the partial pressure 
 - The student may think that the rate determining step will keep both intermediates and catalysts, however the slow step can include catalysts but must eliminate any intermediates if the previous step is a fast equilibrium to derive the rate law.
 ### Real World Connection:
 - In modern airbags, there is a multistep reaction that occurs with the decomposition of solid sodium azide. The crash sensor ignites only when there is a sudden drop in the car’s momentum. When the temperature rises, the chemical bonds of sodium azide break, forming nitrogen gas. The deployment of an airbag demonstrates how fast particles break apart and react resulting in the rapid production of nitrogen gas. Hence, the nitrogen gas is ultimately used to reduce the impact force created by the crash.
-### Quiz:
-- Question 1
-  - Answer Choice A
-  - Answer Choice B
-  - Answer Choice C (Correct Choice)
-  - Answer Choice D
-- Question 2
-  - Answer Choice A
-  - Answer Choice B (Correct Choice)
-  - Answer Choice C
-  - Answer Choice D
-- Question 3
-  - Answer Choice A (Correct Choice)
-  - Answer Choice B
-  - Answer Choice C
-  - Answer Choice D
-- Question 4
-  - Answer Choice A
-  - Answer Choice B
-  - Answer Choice C
-  - Answer Choice D (Correct Choice)
+### Quiz: 
+AP Chemistry Unit 5 MCQ Explanations (1–10)
+
+Question 1
+-If the concentration of A is doubled, what happens to the rate?
+Rate = k[A]
+-A. remain the same 
+This would only be true for a zero-order reaction, where rate does not depend on concentration.
+-B. double (correct)
+First-order means rate is directly proportional to [A], so doubling [A] doubles the rate.
+-C. quadruple 
+This would occur if the reaction were second order in A (rate ∝ [A]²).
+-D. increase eightfold 
+This would correspond to a third-order dependence on A (rate ∝ [A]³).
+
+Question 2
+Rate = k[A]²[B]. If [A] is doubled, what happens to the rate?
+A. double 
+This ignores the exponent of 2 on [A], which is critical in the rate law.
+B. triple 
+No mathematical relationship in the rate law produces a factor of 3.
+C. quadruple (correct)
+Rate = k(2[A])²[B] = 4k[A]²[B], so rate increases by 4.
+D. eightfold 
+This would require a cubic dependence on [A], not quadratic.
+
+Question 3
+Why does increasing temperature increase reaction rate?
+A. lowers activation energy 
+Only a catalyst lowers activation energy, not temperature.
+B. increases number of particles 
+Temperature does not change the number of particles present.
+C. increases fraction of effective collisions (correct)
+More molecules have energy greater than or equal to activation energy, increasing successful collisions.
+D. changes reaction mechanism 
+Reaction mechanism typically does not change with temperature.
+
+Question 4
+Why do catalysts increase reaction rate?
+A. increase reactant concentration 
+Catalysts do not change concentration.
+B. lower activation energy using alternate pathway (correct)
+Correct. Catalysts provide a lower-energy pathway for the reaction.
+C. increase product stability 
+Catalysts do not affect thermodynamic stability of products.
+D. shift equilibrium toward products 
+Catalysts do not change equilibrium constant.
+
+Question 5
+A graph of ln[A] vs time is linear. What is the reaction order?
+A. zero order 
+Zero-order gives a linear [A] vs time graph.
+B. first order (correct)
+Only first-order reactions produce a linear ln[A] vs time graph.
+C. second order 
+Second-order reactions are linear in 1/[A] vs time.
+D. third order 
+Isnt used in AP testing
+
+Question 6
+Which graph is linear for a second-order reaction?
+A. [A] vs time 
+This corresponds to zero-order kinetics.
+B. Rate vs time 
+Not used to determine reaction order.
+C. ln[A] vs time 
+This corresponds to first-order kinetics.
+D. 1/[A] vs time (correct)
+Correct. Second-order reactions are linear in 1/[A] vs time.
+
+Question 7
+A reaction has a constant half-life. What does this indicate?
+A. zero order 
+Zero-order half-life changes as concentration decreases.
+B. first order (correct)
+First-order reactions have constant half-life independent of concentration.
+C. second order 
+Second-order half-life increases over time.
+D. third order 
+Not associated with constant half-life behavior.
+
+Question 8
+Which change increases reaction rate for a solid reactant?
+A. increase particle size 
+Larger particles reduce surface area, slowing reaction.
+B. decrease surface area 
+Fewer collisions occur, so rate decreases.
+C. crush into smaller pieces (correct)
+More surface area → more frequent effective collisions.
+D. lower temperature 
+Decreases kinetic energy and collision frequency.
+
+Question 9
+Collision theory requires:
+A. equal masses 
+Mass does not determine reaction success.
+B. sufficient energy and proper orientation (correct)
+Both are required for an effective collision.
+C. catalyst 
+Catalysts speed up reactions but are not required.
+D. identical molecules 
+Different molecules can still react.
+
+Question 10
+Identify the intermediate:
+Step 1: A + B → C
+Step 2: C + D → E
+A. A 
+A is a reactant, consumed in Step 1.
+B. B 
+B is also a reactant.
+C. C (correct)
+C is formed in Step 1 and consumed in Step 2 → intermediate.
+D. E 
+E is the final product, not an intermediate.
+
+
 
   # Unit 6 Thermodynamics 
  ### Vocabulary List:
