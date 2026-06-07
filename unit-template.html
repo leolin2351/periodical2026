@@ -1,229 +1,352 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      .card-body {
-        padding-left: 10px !important;
-        padding-top: 5px !important;
-        border-style: solid;
-        border-width: 2px;
-        border-color: rgb(165, 164, 164);
-        border-radius: 20px;
-      }
-      .hidecards {display: none}
 
-      .front {text-align: center; padding-top: 18px}
-      .back {text-align: center; padding-top: 18px}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .card-body {
+      padding-left: 10px !important;
+      padding-top: 5px !important;
+      border-style: solid;
+      border-width: 2px;
+      border-color: rgb(165, 164, 164);
+      border-radius: 20px;
+    }
 
-      
-    </style>
-    <title>Unit X</title>
+    .hidecards {
+      display: none
+    }
 
-    <!--Inter font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=BioRhyme:wght@200..800&family=Dongle&family=Gafata&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Petrona:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    .front {
+      text-align: center;
+      padding-top: 18px
+    }
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <!-- Template UI for every unit page -->
+    .back {
+      text-align: center;
+      padding-top: 18px
+    }
+
+    body {
+      padding-top: 70px;
+      /* This pushes all content down so it doesn't get hidden behind the fixed navbar */
+    }
+
+    .spacing {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #6c757d;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    /* Styling for the light gray vocab boxes */
+    .vocab-card {
+      background-color: #f1f1f1 !important;
+      border: 1px solid #e0e0e0 !important;
+      border-radius: 4px !important;
+      /* Sharp, clean edges like Figma */
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .vocab-card:hover {
+      background-color: #e8e8e8 !important;
+      /* Subtle hover effect */
+    }
+
+    .vocab-card h4,
+    .vocab-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    /* Main Takeaways Styles (Gray Checklist Blocks) */
+    .takeaway-item {
+      background-color: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 6px;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    /* Automatically adds the dark checkmark */
+    .takeaway-item::before {
+      content: "✓";
+      color: #495057;
+      font-weight: bold;
+      margin-right: 0.75rem;
+    }
+
+    /* Misconceptions Styles (Red Alert Warning Box) */
+    .misconception-box {
+      background-color: #fff5f5;
+      border: 1px solid #ffe3e3;
+      border-radius: 6px;
+      padding: 1rem;
+      display: flex;
+      align-items: flex-start;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      color: #212529;
+    }
+
+    /* Automatically adds the red X mark */
+    .misconception-box::before {
+      content: "✕";
+      color: #fa5252;
+      font-weight: bold;
+      margin-right: 0.75rem;
+    }
+    }
+  </style>
+  <title>Unit X</title>
+
+  <!--Inter font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=BioRhyme:wght@200..800&family=Dongle&family=Gafata&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Petrona:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Template UI for every unit page -->
 
 
-    <!--Navbar-->
-     <p id="home">home</p>
-    <nav class="navbar fixed-top bg-body-tertiary navbar-expand-lg shadow" data-bs-theme="light">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 inter-regular">Periodical 2026</span>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link inter-regular" aria-current="page" href="index.html#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link inter-regular" aria-current="page" href="index.html#unit-content">Review</a>
-                </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container-fluid spacing">
-      <h3 class="inter-bold">AP CHEMISTRY UNIT REVIEW</h3>
-      <h1 class="inter-bold">Unit :</h1>
-
-      <h2 class="inter-bold">How it applies to our lives</h2>
-      <p></p>
-    </div>
-
-    <hr>
-
-    <div class= "container-fluid spacing">
-      <h1 class= "inter-bold">Key Vocabulary</h1>
-      <p>Click on a card to flip it and learn its important information!</p>
-    <div class="row">
-
-      <!--Will make proper cards later, just a placeholder for visual-->
-      <div class="col-md-4">
-        <div class="card-body card" id="card">
-          <h4 class="card-title front" id="front">Word</h4>
-          <p class="back">Info</p>
-        </div>
-      </div>
-
-        <div class="col-md-4">
-        <div class="card-body card" id="card">
-          <h4 class="card-title front" id="front">Word</h4>
-          <p class="back">Info</p>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card-body card text-bg-example" id="card">
-          <h4 class="card-title front" id="front">Word</h4>
-          <p class="back">Info</p>
-        </div>
-      </div>
-    </div>
-
-  <!--Carousel-->  
-    <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      
-        <div class="card-body card text-bg-example" id="card">
-          <h4 class="card-title front" id="front">Word</h4>
-          <p class="back">Info</p>
-        </div>
-      
-    </div>
-    <div class="carousel-item">
-        <div class="card-body card text-bg-example" id="card">
-          <h4 class="card-title front" id="front">Word</h4>
-          <p class="back">Info</p>
-        </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card-body card text-bg-example"  id="card">
-          <h4 class="card-title front" id="front">Word</h4>
-          <p class="back">Info</p>
-        </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <spa class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"> 
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-  </div>
-</dqiv>
-    
-    <br>
-    <hr>
-    <br>
-
+  <!--Navbar-->
+  <nav class="navbar fixed-top bg-body-tertiary navbar-expand-lg shadow" data-bs-theme="light">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <p class="eyebrow">CORE CONCEPTS</p>
-        <h1 class="inter-bold">Main Takeaways:</h1>
-        </div>
-        <div class="col">
-          <p class="eyebrow">WATCH OUT</p>
-          <h1 class="inter-bold">Common Misconceptions:</h1>
-        </div> 
+      <span class="navbar-brand mb-0 inter-regular">Periodical 2026</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link inter-regular" aria-current="page" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link inter-regular" aria-current="page" href="index.html#unit-content">Review</a>
+          </li>
+        </ul>
       </div>
-      
+    </div>
+  </nav>
+
+  <div class="container spacing">
+    <p class="eyebrow">AP Chemistry Unit Review</p>
+    <h1 class="fw-bold mb-3">Unit 1: Atomic Structure and Properties</h1>
+
+    <h3 class="fw-semibold fs-5 mb-2">How it applies to our lives</h3>
+    <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+  </div>
+
+  <hr>
+
+  <div class="container-fluid spacing">
+    <h1 class="inter-bold">Key Vocabulary</h1>
+    <p>Click on a card to flip it and learn its important information!</p>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <div class="card vocab-card">
+          <h4 class="front">Isotope</h4>
+          <p class="back">Info about isotopes...</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card vocab-card">
+          <h4 class="front">Electronegativity</h4>
+          <p class="back">Info about electronegativity...</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card vocab-card">
+          <h4 class="front">Ionization Energy</h4>
+          <p class="back">Info about energy...</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card vocab-card">
+          <h4 class="front">Valence Electrons</h4>
+          <p class="back">Info about electrons...</p>
+        </div>
+      </div>
+
+      <!--Carousel-->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="card-body card text-bg-example" id="card">
+              <h4 class="card-title front" id="front">Word</h4>
+              <p class="back">Info</p>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="card-body card text-bg-example" id="card">
+              <h4 class="card-title front" id="front">Word</h4>
+              <p class="back">Info</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-body card text-bg-example" id="card">
+              <h4 class="card-title front" id="front">Word</h4>
+              <p class="back">Info</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
     </div>
 
     <br>
+    <hr>
+    <br>
 
-    <div class="container-fluid spacing"> 
-      <div style="max-width: 1000px;">
+    <div class="container spacing">
+      <div class="row g-4">
 
-    <p class="eyebrow">Check Your Knowledge</p>
-    <h1 class="fw-bold mb-1">Unit Quiz</h1>
-    <p class="text-muted mb-4">Select the best answer for each question to test your understanding.</p>
+        <div class="col-md-7">
+          <p class="eyebrow">CORE CONCEPTS</p>
+          <h2 class="fw-bold mb-3 fs-4">Main Takeaways</h2>
 
-    <!-- Question 1 -->
-    <div class="question-card">
-      <p class="question-text">1. This is a question?</p>
-      <label class="option"><input type="radio" name="q1" value="a"/> Answer A</label>
-      <label class="option"><input type="radio" name="q1" value="b"/> Answer B</label>
-      <label class="option"><input type="radio" name="q1" value="c"/> Answer C</label>
-      <label class="option"><input type="radio" name="q1" value="d"/> Answer D</label>
-    </div>
+          <div class="takeaway-item">Lorem ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text
+            of the printing.</div>
+          <div class="takeaway-item">Lorem ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text
+            of the printing.</div>
+          <div class="takeaway-item">Lorem ipsum is simply dummy text of the printing.</div>
+          <div class="takeaway-item">Lorem ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text
+            of the printing.</div>
+          <div class="takeaway-item">Lorem ipsum is simply dummy text of the printing.</div>
+        </div>
 
-    <!-- Question 2 -->
-    <div class="question-card">
-      <p class="question-text">2. This is a question?</p>
-      <label class="option"><input type="radio" name="q2" value="a"/> Answer A</label>
-      <label class="option"><input type="radio" name="q2" value="b"/> Answer B</label>
-      <label class="option"><input type="radio" name="q2" value="c"/> Answer C</label>
-      <label class="option"><input type="radio" name="q2" value="d"/> Answer D</label>
-    </div>
+        <div class="col-md-5">
+          <p class="eyebrow">WATCH OUT</p>
+          <h2 class="fw-bold mb-3 fs-4">Common Misconception</h2>
 
-    <!-- Question 3 -->
-    <div class="question-card">
-      <p class="question-text">3. This is a question?</p>
-      <label class="option"><input type="radio" name="q3" value="a"/> Answer A</label>
-      <label class="option"><input type="radio" name="q3" value="b"/> Answer B</label>
-      <label class="option"><input type="radio" name="q3" value="c"/> Answer C</label>
-      <label class="option"><input type="radio" name="q3" value="d"/> Answer D</label>
-    </div>
+          <div class="misconception-box">
+            Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text of the printing. Lorem
+            Ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text of the printing.
+          </div>
+        </div>
 
-    <button class="btn-submit">Submit</button>
+        <br>
 
-  </div>
-    </div>
+        <div class="container-fluid spacing">
+          <div style="max-width: 1000px;">
 
-    <div class="shadow-lg" id="footer">
-        <footer>
+            <p class="eyebrow">Check Your Knowledge</p>
+            <h1 class="fw-bold mb-1">Unit Quiz</h1>
+            <p class="text-muted mb-4">Select the best answer for each question to test your understanding.</p>
+
+            <!-- Question 1 -->
+            <div class="question-card">
+              <p class="question-text">1. This is a question?</p>
+              <label class="option"><input type="radio" name="q1" value="a" /> Answer A</label>
+              <label class="option"><input type="radio" name="q1" value="b" /> Answer B</label>
+              <label class="option"><input type="radio" name="q1" value="c" /> Answer C</label>
+              <label class="option"><input type="radio" name="q1" value="d" /> Answer D</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-card">
+              <p class="question-text">2. This is a question?</p>
+              <label class="option"><input type="radio" name="q2" value="a" /> Answer A</label>
+              <label class="option"><input type="radio" name="q2" value="b" /> Answer B</label>
+              <label class="option"><input type="radio" name="q2" value="c" /> Answer C</label>
+              <label class="option"><input type="radio" name="q2" value="d" /> Answer D</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-card">
+              <p class="question-text">3. This is a question?</p>
+              <label class="option"><input type="radio" name="q3" value="a" /> Answer A</label>
+              <label class="option"><input type="radio" name="q3" value="b" /> Answer B</label>
+              <label class="option"><input type="radio" name="q3" value="c" /> Answer C</label>
+              <label class="option"><input type="radio" name="q3" value="d" /> Answer D</label>
+            </div>
+
+            <button class="btn-submit">Submit</button>
+
+          </div>
+        </div>
+
+        <div class="shadow-lg" id="footer">
+          <footer>
             <div>
-                <a class="inter-regular" href="https://www.hstat.org/" target="_blank">Our school</a>
+              <a class="inter-regular" href="https://www.hstat.org/" target="_blank">Our school</a>
             </div>
             <div>
-                <a class="inter-regular" href="mailto:ltorres25@schools.nyc.gov" target="_blank">ltorres25@schools.nyc.gov</a>
+              <a class="inter-regular" href="mailto:ltorres25@schools.nyc.gov"
+                target="_blank">ltorres25@schools.nyc.gov</a>
             </div>
             <div>
-                <a class="inter-regular" href="https://maps.app.goo.gl/sKHwJFH19ot9GF3d6" target="_blank">Address</a>
+              <a class="inter-regular" href="https://maps.app.goo.gl/sKHwJFH19ot9GF3d6" target="_blank">Address</a>
             </div>
-        </footer>
-    </div>
-  
-    <script>
-      // Flashcard JS
-      var cards = document.querySelectorAll(".card")
-      var front = document.querySelectorAll(".front")
-      var backs = document.querySelectorAll(".back")
+          </footer>
+        </div>
 
-      backs.forEach(function(back){
-        back.classList.add("hidecards")
-      })
-     
-      // figured out thanks to Mr. Mueller
-      cards.forEach(function(card){
-        card.addEventListener("click", function(){
-          console.log(card.children)
-        card.children[0].classList.toggle("hidecards")
-        card.children[1].classList.toggle("hidecards")
-      })
-      })
-        
+        <script>
+          // Flashcard JS
+          var cards = document.querySelectorAll(".card")
+          var front = document.querySelectorAll(".front")
+          var backs = document.querySelectorAll(".back")
+
+          backs.forEach(function (back) {
+            back.classList.add("hidecards")
+          })
+
+          // figured out thanks to Mr. Mueller
+          cards.forEach(function (card) {
+            card.addEventListener("click", function () {
+              console.log(card.children)
+              card.children[0].classList.toggle("hidecards")
+              card.children[1].classList.toggle("hidecards")
+            })
+          })
+
       // })
-      
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+          crossorigin="anonymous"></script>
+</body>
+
 </html>
