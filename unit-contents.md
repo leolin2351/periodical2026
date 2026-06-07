@@ -664,7 +664,7 @@ Which reaction is a redox reaction?
 ### Quiz:
 
 1.
-Question: If the concentration of A is doubled, what happens to the rate? Rate = k[A]
+If the concentration of A is doubled, what happens to the rate? Rate = k[A]
 - remain the same
   - Explanation - Incorrect. This would only be true for a zero-order reaction where rate is independent of concentration.
 - double (Correct Choice)
@@ -675,7 +675,7 @@ Question: If the concentration of A is doubled, what happens to the rate? Rate =
   - Explanation - Incorrect. This would correspond to third-order dependence on A.
 
 2.
-Question: Rate = k[A]²[B]. If [A] is doubled, what happens to the rate?
+Rate = k[A]²[B]. If [A] is doubled, what happens to the rate?
 - double
   - Explanation - Incorrect. This ignores the exponent of 2 on [A].
 - triple
@@ -686,7 +686,7 @@ Question: Rate = k[A]²[B]. If [A] is doubled, what happens to the rate?
   - Explanation - Incorrect. This would require cubic dependence on [A].
 
 3.
-Question: Why does increasing temperature increase reaction rate?
+Why does increasing temperature increase reaction rate?
 - lowers activation energy
   - Explanation - Incorrect. Only a catalyst lowers activation energy.
 - increases number of particles
@@ -697,7 +697,7 @@ Question: Why does increasing temperature increase reaction rate?
   - Explanation - Incorrect. Mechanism typically does not change with temperature.
 
 4.
-Question: Why do catalysts increase reaction rate?
+Why do catalysts increase reaction rate?
 - increase reactant concentration
   - Explanation - Incorrect. Catalysts do not change concentration.
 - lower activation energy using alternate pathway (Correct Choice)
@@ -708,7 +708,7 @@ Question: Why do catalysts increase reaction rate?
   - Explanation - Incorrect. Catalysts do not change equilibrium position.
 
 5.
-Question: A graph of ln[A] vs time is linear. What is the reaction order?
+A graph of ln[A] vs time is linear. What is the reaction order?
 - zero order
   - Explanation - Incorrect. Zero-order is linear in [A] vs time.
 - first order (Correct Choice)
@@ -719,7 +719,7 @@ Question: A graph of ln[A] vs time is linear. What is the reaction order?
   - Explanation - Not used in standard AP kinetics analysis.
 
 6.
-Question: Which graph is linear for a second-order reaction?
+Which graph is linear for a second-order reaction?
 - [A] vs time
   - Explanation - Incorrect. This corresponds to zero-order kinetics.
 - Rate vs time
@@ -730,7 +730,7 @@ Question: Which graph is linear for a second-order reaction?
   - Explanation - Correct. Second-order reactions are linear in 1/[A] vs time.
 
 7.
-Question: A reaction has a constant half-life. What does this indicate?
+A reaction has a constant half-life. What does this indicate?
 - zero order
   - Explanation - Incorrect. Zero-order half-life changes with concentration.
 - first order (Correct Choice)
@@ -741,7 +741,7 @@ Question: A reaction has a constant half-life. What does this indicate?
   - Explanation - Not applicable in this context.
 
 8.
-Question: Which change increases reaction rate for a solid reactant?
+Which change increases reaction rate for a solid reactant?
 - increase particle size
   - Explanation - Incorrect. Larger particles reduce surface area.
 - decrease surface area
@@ -752,7 +752,7 @@ Question: Which change increases reaction rate for a solid reactant?
   - Explanation - Incorrect. Decreases kinetic energy and rate.
 
 9.
-Question: Collision theory requires:
+Collision theory requires:
 - equal masses
   - Explanation - Incorrect. Mass is not required for effective collisions.
 - sufficient energy and proper orientation (Correct Choice)
@@ -763,7 +763,7 @@ Question: Collision theory requires:
   - Explanation - Incorrect. Different molecules can still react.
 
 10.
-Question: Identify the intermediate:
+Identify the intermediate:
 Step 1: A + B → C
 Step 2: C + D → E
 
@@ -822,7 +822,7 @@ In reality breaking a chemical bond requires energy(absorption) which is an endo
 ### Quiz:
 
 1.
-Question: A gas absorbs 150 J of heat and does 40 J of work on the surroundings. ΔE = ?
+A gas absorbs 150 J of heat and does 40 J of work on the surroundings. ΔE = ?
 - +190 J
   - Explanation - Incorrect. This would be true if work were added to the system instead of done by the system.
 - +110 J (Correct Choice)
@@ -833,7 +833,7 @@ Question: A gas absorbs 150 J of heat and does 40 J of work on the surroundings.
   - Explanation - Incorrect. This assumes both heat and work are negative.
 
 2.
-Question: Beaker feels colder. What is true?
+Beaker feels colder. What is true?
 - ΔH is negative
   - Explanation - Incorrect. A colder beaker means the system absorbed heat, so ΔH is positive (endothermic).
 - Heat flows from surroundings into the system (Correct Choice)
@@ -844,7 +844,7 @@ Question: Beaker feels colder. What is true?
   - Explanation - Incorrect. Energy is conserved; it is only transferred.
 
 3.
-Question: ΔH for multi-step reaction:
+ΔH for multi-step reaction:
 ΔH₁ = +40 kJ, ΔH₂ = −75 kJ, ΔH₃ = +15 kJ
 - +130 kJ
   - Explanation - Incorrect. This ignores the signs of enthalpy changes.
@@ -856,7 +856,7 @@ Question: ΔH for multi-step reaction:
   - Explanation - Incorrect sign handling.
 
 4.
-Question: Which is correct?
+Which is correct?
 - Breaking bonds always releases energy
   - Explanation - Incorrect. Breaking bonds requires energy input.
 - Breaking bonds absorbs energy and forming bonds releases energy (Correct Choice)
@@ -867,7 +867,7 @@ Question: Which is correct?
   - Explanation - Incorrect. Bond formation releases energy.
 
 5.
-Question: Solution temperature rises → conclusion?
+Solution temperature rises → conclusion?
 - Reaction is endothermic
   - Explanation - Incorrect. A temperature increase means heat is released, so it is exothermic.
 - Reaction absorbed heat from solution
@@ -878,7 +878,7 @@ Question: Solution temperature rises → conclusion?
   - Explanation - Incorrect. Heat transfer is occurring, so ΔH ≠ 0.
 
 6.
-Question: Height vs pathway analogy
+Height vs pathway analogy
 - Time required
   - Explanation - Incorrect. Time depends on path taken.
 - Distance traveled
@@ -889,7 +889,7 @@ Question: Height vs pathway analogy
   - Explanation - Correct. State functions depend only on initial and final states.
 
 7.
-Question: What is the Standard Enthalpy of Formation?
+What is the Standard Enthalpy of Formation?
 - H₂O(l)
   - Explanation - Incorrect. This is a compound, so ΔHf° is not zero.
 - CO₂(g)
@@ -900,7 +900,7 @@ Question: What is the Standard Enthalpy of Formation?
   - Explanation - Incorrect. This is a compound, not an element in standard state.
 
 8.
-Question: A student adds 250 J of heat to a 50.0 g sample of a metal. Temperature increases from 20.0°C to 30.0°C. What is the specific heat capacity?
+A student adds 250 J of heat to a 50.0 g sample of a metal. Temperature increases from 20.0°C to 30.0°C. What is the specific heat capacity?
 - 0.50 J/(g·°C) (Correct Choice)
   - Explanation - Correct. c = 250 / (50.0 × 10.0) = 0.50 J/(g·°C).
 - 2.0 J/(g·°C)
@@ -911,7 +911,7 @@ Question: A student adds 250 J of heat to a 50.0 g sample of a metal. Temperatur
   - Explanation - Incorrect. This greatly overestimates heat capacity.
 
 9.
-Question: Which increases entropy the most?
+Which increases entropy the most?
 - Water freezing
   - Explanation - Incorrect. Liquid to solid decreases entropy.
 - Water condensing
@@ -922,7 +922,7 @@ Question: Which increases entropy the most?
   - Explanation - Incorrect. Dissolved ions forming a solid decreases entropy.
 
 10.
-Question: ΔH = −250 kJ → spontaneous exothermic reaction. Which is correct?
+ΔH = −250 kJ → spontaneous exothermic reaction. Which is correct?
 - Products have greater potential energy than reactants
   - Explanation - Incorrect. Exothermic reactions have lower-energy products.
 - Reactants have greater potential energy than products (Correct Choice)
